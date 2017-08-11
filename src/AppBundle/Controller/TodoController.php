@@ -37,7 +37,7 @@ class TodoController extends Controller
         ->add('name',TextType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
         ->add('category',TextType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
         ->add('description',TextareaType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
-        ->add('priority',ChoiceType::class, array('choices'=>array('Low'=>'Low','Norlan'=>'Normal','High'=>'High'),'attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
+        ->add('priority',ChoiceType::class, array('choices'=>array('Low'=>'Low','Normal'=>'Normal','High'=>'High'),'attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
         ->add('due_date',DateTimeType::class, array('attr'=>array('class'=>'formcontrol', 'style'=>'margin-bottom:15px')))
         ->add('save',SubmitType::class, array('label'=>'Create Todo','attr'=>array('class'=>'btn btn-primary', 'style'=>'margin-bottom:15px')))
         ->getForm();
@@ -95,7 +95,7 @@ class TodoController extends Controller
           ->add('name',TextType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
           ->add('category',TextType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
           ->add('description',TextareaType::class, array('attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
-          ->add('priority',ChoiceType::class, array('choices'=>array('Low'=>'Low','Norlan'=>'Normal','High'=>'High'),'attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
+          ->add('priority',ChoiceType::class, array('choices'=>array('Low'=>'Low','Normal'=>'Normal','High'=>'High'),'attr'=>array('class'=>'form-control', 'style'=>'margin-bottom:15px')))
           ->add('due_date',DateTimeType::class, array('attr'=>array('class'=>'formcontrol', 'style'=>'margin-bottom:15px')))
           ->add('save',SubmitType::class, array('label'=>'Update Todo','attr'=>array('class'=>'btn btn-primary', 'style'=>'margin-bottom:15px')))
           ->getForm();
